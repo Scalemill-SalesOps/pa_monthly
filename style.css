@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-header {
+  background-color: #e0e0e0; /* Light gray background for headers */
+  font-weight: bold;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Styling for the Total row */
+.total-row {
+  background-color: #e0e0e0; /* Same background color as header */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Flexbox alignment for table and cards */
+.align-height {
+  display: flex;
+  align-items: stretch; /* Stretch child containers to equal height */
+}
+
+.table-container {
+  flex: 1;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 10px;
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.card h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}

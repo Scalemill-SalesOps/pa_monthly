@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporting System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo -->
+  <div class="text-center my-4">
+    <img src="Payactiv_logo.webp" alt="Payactiv Logo" class="logo">
+  </div>
+
+  <!-- Dynamic Month-Year Heading -->
+  <h1 class="text-center mb-4" id="dynamic-heading"></h1>
+
+  <div class="container-fluid">
+    <!-- ENT & CP Section -->
+    <div class="row mb-5 align-height">
+      <!-- Table -->
+      <div class="col-md-8 table-container">
+        <h2>ENT & CP</h2>
+        <table class="table table-bordered table-hover">
+          <thead class="table-header">
+            <tr>
+              <th>SDR</th>
+              <th>Appts</th>
+              <th>Due</th>
+              <th>Held</th>
+              <th>Opp</th>
+            </tr>
+          </thead>
+          <tbody id="ent-cp-table"></tbody>
+        </table>
+      </div>
+  
+      <!-- Cards -->
+      <div class="col-md-4 card-container">
+        <div class="card">
+          <div>
+            <p>Avg Appts / SDR</p>
+            <h3 id="ent-cp-avg-appts"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Held / SDR</p>
+            <h3 id="ent-cp-avg-held"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Due / SDR</p>
+            <h3 id="ent-cp-avg-due"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Opp / SDR</p>
+            <h3 id="ent-cp-avg-opp"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- MM & SMB Section -->
+    <div class="row mb-5 align-height">
+      <!-- Table -->
+      <div class="col-md-8 table-container">
+        <h2>MM & SMB</h2>
+        <table class="table table-bordered table-hover">
+          <thead class="table-header">
+            <tr>
+              <th>SDR</th>
+              <th>Appts</th>
+              <th>Due</th>
+              <th>Held</th>
+              <th>Opp</th>
+            </tr>
+          </thead>
+          <tbody id="mm-smb-table"></tbody>
+        </table>
+      </div>
+  
+      <!-- Cards -->
+      <div class="col-md-4 card-container">
+        <div class="card">
+          <div>
+            <p>Avg Appts / SDR</p>
+            <h3 id="mm-smb-avg-appts"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Held / SDR</p>
+            <h3 id="mm-smb-avg-held"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Due / SDR</p>
+            <h3 id="mm-smb-avg-due"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Avg Opp / SDR</p>
+            <h3 id="mm-smb-avg-opp"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+
+  <!-- Bootstrap and Custom JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
